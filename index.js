@@ -54,19 +54,24 @@
 
 // ### Problem 3:
 // Create a Student class with the following properties : studentName, codeSchoolCohort, and grades(grades should be an array of objects and each object should have the properties assignemtName and assignemtnScore).
-let grades={assignemtName,assignemtnScore}
+
 class Student{
-    constructor(studentName, codeSchoolCohort, grades){
+    constructor(studentName, codeSchoolCohort){
         this.studentName=studentName
         this.codeSchoolCohort=codeSchoolCohort
-        this.grades=grades
+        this.grades=[]
     }
     acceptStudentname(newStudent){
         this.studentName=newStudent
     }
-
+    nameScore(assignemtName,assignemtnScore){
+        this.grades=assignemtName, assignemtnScore
+    }
 }
-let newStudent=("Priest",)
+let newStudent=("Priest", "Class of '75", "5")
+newStudent.studentName("John Shaft")
+let student1=("Mr.T", "Class of 74",  )
+
 // Create a method that accepts a student name and updates the studentName of an instance of your Student Class. Create a method that accepts an assignment name and assignment score and adds a grade object to the grades array. Create two instances of this class with empty grade arrays. Update the name of one instance of the Student Class using the class method. Add one grade object to each instance of the Student Class grade array using the class method.
 
 // HINT : use object literal notation to create a grade object in the grade array for each instance of the Student Class
